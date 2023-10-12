@@ -3,77 +3,186 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.calculator{
-    margin: 20vh auto;
-    background-color: navy;
-    width: 280px;
-    height: 350px;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    box-shadow: 0 0 6px black;
-    transform: scale(1.2);
-}
-
-/* Display to display the input, result from the users  */
-
-#display {
+.main{
     width: 100%;
-    background: linear-gradient(green,green);
-    /* min-height: 60px; */
-    height: 75px;
-    color: white;
+    background: palegoldenrod;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
     font-family: sans-serif;
-    font-size: 2rem;
-    border-radius: 10px;
-    text-align: right;
-    padding: 25px 10px 2px 2px;
 }
 
-/* Buttons like 1, 2 , = ,+ etc. */
-
-.buttons {
-    font-family: sans-serif;
-    height: auto;
-    /* min-height: 48px; */
-    height: 55px;
-    width: 25%;
-    border: 1px solid black;
-    border-top: 0;
-    color: white;
-    font-size: 1.2rem;
+.nav{
+    width: 86%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
+    padding: 15px 0;
+  align-items: center;
+    justify-content: space-between;
+}
+.nav .logo{
+    width:75px;
     cursor: pointer;
-    transition: all .3s;
+    margin-top: 0%;
+    margin-left: -4%;
+    border-radius: 20%;
+}
+.nav h2{
+    margin-left: -21%;
+    color: red;
+    transition: -4s ease;
+    font-family:'poppins';
+}
+.nav .contact{
+    text-decoration: none;
+    color: wheat;
+    background: darkgreen;
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: 2s ease;
+    margin-left: 70px;
+}
+.nav .contact:hover{
+    color: cyan;
+    background: midnightblue;
 }
 
-.buttons:hover {
-    background-color: navy;
-    box-shadow: 0 0 8px navy;
+ul{
+    margin-top: -4%;
+
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: maroon;
+    margin-top: -3%;
+    transition: -4s ease;
+}
+ul li a:hover{
+    color: midnightblue;
+}
+.info{
+    margin-left: 7%;
+    margin-top: 6%;
+}
+.info h2{
+    font-size: 50px;
+    color: darkgreen;
 }
 
-/* Button with Value 0 has a bigger width */
-
-.buttons[data-value = "0"] {
-    width: 50%;
-    border-bottom-left-radius: 10px;
+.info h3{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color:brown;
 }
-
-/* Arithmatic Operators have a separate background color  */
-
-.buttons[data-value = "="] {
-    background-color:green;
-    border-bottom-right-radius: 10px;
+.info a{
+    text-decoration: none;
+    color: wheat;
+    background: darkgreen;
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: 2s ease;
 }
-
-.buttons:nth-child(4n+1) {
-    background-color:green;
+.info a:hover{
+    color: cyan;
+    background: midnightblue;
 }
-
-.buttons:nth-child(4n+1):hover, .buttons[data-value = "="]:hover {
-    background-color: navy;
+.image{
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    border-radius: 70%;
+}
+.image img{
+    position: absolute;
+    height: 140%;
+    left: 70%;
+    transform: translate(-55%);
+    bottom: 0;
+    translate: left 3s ease;
+}
+.image:hover .girl{
+    left: 55%;
+}
+/*Menu-card*/
+h1{
+    color: green;
+    text-align: center;
+    padding: 20px;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item img:hover{
+    transform: scale(1.04);
+}
+.item h4{
+    padding: 5px;
+    text-align: center;
+}
+.item button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s ease;
+}
+.item button:hover{
+    color: green;
+    background:rgb(248, 239, 133) ;
+}
+@media screen and (max-width:1000px){
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media screen and (max-width:768px){
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+@media screen and (max-width:1000px){
+    .main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media screen and (max-width:768px){
+    .main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
 }
