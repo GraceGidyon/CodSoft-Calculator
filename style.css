@@ -5,7 +5,7 @@
 }
 .main{
     width: 100%;
-    background: palegoldenrod;
+    background:url(pics/bg.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -18,38 +18,25 @@
     display: flex;
     margin: auto;
     padding: 15px 0;
-  align-items: center;
+    align-items: center;
     justify-content: space-between;
 }
 .nav .logo{
-    width:75px;
+    width: 75px;
     cursor: pointer;
     margin-top: 0%;
     margin-left: -4%;
-    border-radius: 20%;
+    border-radius: 30px;
 }
 .nav h2{
-    margin-left: -21%;
-    color: red;
+    margin-left: -38%;
+    color: midnightblue;
     transition: -4s ease;
-    font-family:'poppins';
+    font-family:cursive;
 }
-.nav .contact{
-    text-decoration: none;
-    color: wheat;
-    background: darkgreen;
-    margin: 26px 0;
-    padding: 10px 18px;
-    border-radius: 10px;
-    display: inline-block;
-    transition: 2s ease;
-    margin-left: 70px;
+.nav span{
+    color: teal;
 }
-.nav .contact:hover{
-    color: cyan;
-    background: midnightblue;
-}
-
 ul{
     margin-top: -4%;
 
@@ -63,32 +50,33 @@ ul li a{
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-    color: maroon;
+    color: midnightblue;
     margin-top: -3%;
     transition: -4s ease;
 }
 ul li a:hover{
-    color: midnightblue;
+    color: #ff00b3;
 }
 .info{
     margin-left: 7%;
     margin-top: 6%;
 }
-.info h2{
-    font-size: 50px;
-    color: darkgreen;
+.info h1{
+    font-size: 65px;
+    color: midnightblue;
 }
-
 .info h3{
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 24px;
-    color:brown;
+}
+.info span{
+    color: teal;
 }
 .info a{
     text-decoration: none;
     color: wheat;
-    background: darkgreen;
+    background: midnightblue;
     margin: 26px 0;
     padding: 10px 18px;
     border-radius: 10px;
@@ -97,7 +85,7 @@ ul li a:hover{
 }
 .info a:hover{
     color: cyan;
-    background: midnightblue;
+    background: black;
 }
 .image{
     width: 70%;
@@ -118,71 +106,307 @@ ul li a:hover{
 .image:hover .girl{
     left: 55%;
 }
-/*Menu-card*/
-h1{
-    color: green;
+.icons{
+    text-decoration: none;
+    color:midnightblue;
+
+}
+.icons ion-icon{
+    margin-left: 7%;
+    color: midnightblue;
+    margin-right: -60px;
+    font-size: 40px;
+transition: .4s ease;
+}
+.icons ion-icon:hover{
+    color: teal;
+}
+
+
+/*Skill Section*/
+.skill{
     text-align: center;
+    color: midnightblue;
     padding: 20px;
 }
-.items{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 30px 20px;
-    grid-column-gap: 20px;
-    grid-row-gap: 30px;
+.skill-img{
+    max-width: 320px;
+    float: left;
+    margin-right: 220px;
+    left: 100px;
+    border-radius: 70%;
 }
-.item img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    cursor: pointer;
-    transition: 0.2s ease;
+.tech-img {
+   /* Ensure the image maintains its aspect ratio */
+    border-radius: 20px; /* Remove border-radius for the image */
 }
-.item img:hover{
-    transform: scale(1.04);
+.skills-display {
+    width: 55%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
 }
-.item h4{
-    padding: 5px;
-    text-align: center;
+
+.skill-progress {
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+    
 }
-.item button{
-    padding: 5px 30px;
-    border: none;
-    outline: none;
-    background-color: green;
+
+.skill-progress > div {
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name span {
     color: white;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 20px;
-    display: block;
-    margin: 0 auto;
-    transition: 0.2s ease;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
 }
-.item button:hover{
-    color: green;
-    background:rgb(248, 239, 133) ;
+
+/* setting background-color */
+
+.m-blue {
+    color: #2857a4;
 }
-@media screen and (max-width:1000px){
-    .items{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
+.mb-blue{
+    background-color: hsl(60, 95%, 15%);
 }
-@media screen and (max-width:768px){
-    .items{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
+.mb-orange {
+    background-color:darkgreen;
 }
-@media screen and (max-width:1000px){
-    .main{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
+
+.mb-teal {
+    background-color: #0b8176;
 }
-@media screen and (max-width:768px){
-    .main{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
+
+.mb-light-purple {
+    background-color: brown;
+}
+.mb-purple{
+    background-color: maroon;
+}
+.mb-red{
+    background-color: midnightblue;
+}
+.mb-black{
+    background-color: purple;
+}
+
+
+
+/*Percentage Classes */
+
+.eighty-five-percent {
+    height: inherit;
+    width: 85%;
+}
+
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.fifty-percent {
+    height: inherit;
+    width: 50%;
+}
+
+
+/* Projects Section */
+/* Projects Section */
+.projects {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.project {
+    height: 50%;
+    width: 50%;
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px cyan;
+    float: left;
+    transition: 2s ease;
+}
+
+.project img {
+    max-width: 100%;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.project h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: midnightblue;
+}
+
+.project p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: midnightblue;
+    color: wheat;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+    background-color: black;
+    color: cyan;
+}
+
+.project:hover{
+    color: white;
+    background-color:midnightblue;
+}
+/*contact section*/
+/* Contact Section */
+.contact-form{
+    position: relative;
+    min-height: 100vh;
+    z-index: 0;
+    padding: 30px;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    align-items: center;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+}
+.container1{
+    max-width: 700px;
+    margin-top: 0 auto;
+}
+.contact-form h1{
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+.contact-form h2{
+    line-height: 40px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    text-align: center; 
+    font-weight: 500;
+}
+.contact-form .main1{
+    position:relative;
+    display: flex;
+    margin: 30px 0;
+}
+.content1{
+    flex-basis: 50%;
+    padding: 3em 3em;
+    background: #fff;
+    box-shadow: 2px 9px 42px -17px rgba(0, 0,0,1);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.form-img{
+    flex-basis: 50%;
+    background: #f0f4f8;
+    background-size: cover;
+    padding: 40px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    align-items: center;
+    display: grid;
+}
+.form-img img{
+   max-width: 100%;
+    border-radius: 50rem;
+}
+.btn,
+button,
+input{
+    border-radius: 35px;
+
+}
+.btn:hover,
+button:hover{
+    color: #272346;
+    transition: 0.5s ease;
+}
+.contact-form form{
+    margin: 30px 0;
+}
+.contact-form input,
+textarea{
+
+    outline: none;
+    margin-bottom: 15px;
+    font-stretch: 16px;
+    color: #999;
+    padding: 14px 20px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    background: #fcfcfc;
+    transition: 0.3s ease;
+}
+.contact-form input:focus{
+    background: transparent;
+    border: 1px solid mediumblue;
+}
+.contact-form button{
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    background: midnightblue;
+    font-weight: 600;
+    transition: 2s ease;
+}
+
+footer {
+    background-color: teal; /* Background color for the footer */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Style the copyright text */
+.copyright {
+    font-weight: bold;
+}
+
+/* Add hover effect to the copyright text if desired */
+.copyright:hover {
+    text-decoration: underline;
+}
+.social-icons {
+    font-size: 24px;
+    color: #fff;
+}
+
+.social-icons a {
+    margin: 0 10px; /* Adjust the spacing between icons */
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-icons a:hover {
+    color: midnightblue; /* Change color on hover (LinkedIn) */
 }
