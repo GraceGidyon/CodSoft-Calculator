@@ -3,410 +3,77 @@
     padding: 0;
     box-sizing: border-box;
 }
-.main{
-    width: 100%;
-    background:url(pics/bg.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-    font-family: sans-serif;
-}
 
-.nav{
-    width: 86%;
-    display: flex;
-    margin: auto;
-    padding: 15px 0;
-    align-items: center;
-    justify-content: space-between;
-}
-.nav .logo{
-    width: 75px;
-    cursor: pointer;
-    margin-top: 0%;
-    margin-left: -4%;
-    border-radius: 30px;
-}
-.nav h2{
-    margin-left: -38%;
-    color: midnightblue;
-    transition: -4s ease;
-    font-family:cursive;
-}
-.nav span{
-    color: teal;
-}
-ul{
-    margin-top: -4%;
-
-}
-ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 10px 16px;
-}
-ul li a{
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    color: midnightblue;
-    margin-top: -3%;
-    transition: -4s ease;
-}
-ul li a:hover{
-    color: #ff00b3;
-}
-.info{
-    margin-left: 7%;
-    margin-top: 6%;
-}
-.info h1{
-    font-size: 65px;
-    color: midnightblue;
-}
-.info h3{
-    font-size: 18px;
-    letter-spacing: 1px;
-    line-height: 24px;
-}
-.info span{
-    color: teal;
-}
-.info a{
-    text-decoration: none;
-    color: wheat;
-    background: midnightblue;
-    margin: 26px 0;
-    padding: 10px 18px;
+.calculator{
+    margin: 20vh auto;
+    background-color: navy;
+    width: 280px;
+    height: 350px;
     border-radius: 10px;
-    display: inline-block;
-    transition: 2s ease;
-}
-.info a:hover{
-    color: cyan;
-    background: black;
-}
-.image{
-    width: 70%;
-    height: 60%;
-    position: absolute;
-    right: 100px;
-    bottom: 0;
-    border-radius: 70%;
-}
-.image img{
-    position: absolute;
-    height: 140%;
-    left: 70%;
-    transform: translate(-55%);
-    bottom: 0;
-    translate: left 3s ease;
-}
-.image:hover .girl{
-    left: 55%;
-}
-.icons{
-    text-decoration: none;
-    color:midnightblue;
-
-}
-.icons ion-icon{
-    margin-left: 7%;
-    color: midnightblue;
-    margin-right: -60px;
-    font-size: 40px;
-transition: .4s ease;
-}
-.icons ion-icon:hover{
-    color: teal;
-}
-
-
-/*Skill Section*/
-.skill{
-    text-align: center;
-    color: midnightblue;
-    padding: 20px;
-}
-.skill-img{
-    max-width: 320px;
-    float: left;
-    margin-right: 220px;
-    left: 100px;
-    border-radius: 70%;
-}
-.tech-img {
-   /* Ensure the image maintains its aspect ratio */
-    border-radius: 20px; /* Remove border-radius for the image */
-}
-.skills-display {
-    width: 55%;
-    padding: 10px;
-    margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
-   
-    justify-content: space-evenly;
-    align-items: flex-start;
-    
-}
-
-.skill-progress {
-    width: 11rem;
-    height: 2.2rem;
-    background-color: lightgrey;
-    border-radius: 1rem;
-    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
-    margin: 25px;
-    overflow: hidden;
-    
-}
-
-.skill-progress > div {
-    border-radius: 20px 0px 0px 20px;
-    box-shadow: 1px 1px 5px 2px #989882;
-}
-
-.skill-name span {
-    color: white;
-    font-size: 1rem;
-    margin-left: 10px;
-    vertical-align: middle;
-}
-
-/* setting background-color */
-
-.m-blue {
-    color: #2857a4;
-}
-.mb-blue{
-    background-color: hsl(60, 95%, 15%);
-}
-.mb-orange {
-    background-color:darkgreen;
-}
-
-.mb-teal {
-    background-color: #0b8176;
-}
-
-.mb-light-purple {
-    background-color: brown;
-}
-.mb-purple{
-    background-color: maroon;
-}
-.mb-red{
-    background-color: midnightblue;
-}
-.mb-black{
-    background-color: purple;
-}
-
-
-
-/*Percentage Classes */
-
-.eighty-five-percent {
-    height: inherit;
-    width: 85%;
-}
-
-.eighty-percent {
-    height: inherit;
-    width: 80%;
-}
-
-.fifty-percent {
-    height: inherit;
-    width: 50%;
-}
-
-
-/* Projects Section */
-/* Projects Section */
-.projects {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.project {
-    height: 50%;
-    width: 50%;
-    margin-top: 30px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px cyan;
-    float: left;
-    transition: 2s ease;
-}
-
-.project img {
-    max-width: 100%;
-    height: 50px;
-    border-radius: 20px;
-}
-
-.project h2 {
-    font-size: 24px;
-    margin-top: 10px;
-    color: midnightblue;
-}
-
-.project p {
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-.project a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: midnightblue;
-    color: wheat;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.project a:hover {
-    background-color: black;
-    color: cyan;
-}
-
-.project:hover{
-    color: white;
-    background-color:midnightblue;
-}
-/*contact section*/
-/* Contact Section */
-.contact-form{
-    position: relative;
-    min-height: 100vh;
-    z-index: 0;
-    padding: 30px;
     justify-content: center;
-    display: grid;
-    grid-template-rows: 1fr auto 1fr;
-    align-items: center;
-    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    box-shadow: 0 0 6px black;
+    transform: scale(1.2);
+}
+
+/* Display to display the input, result from the users  */
+
+#display {
+    width: 100%;
+    background: linear-gradient(green,green);
+    /* min-height: 60px; */
+    height: 75px;
     color: white;
+    font-family: sans-serif;
+    font-size: 2rem;
+    border-radius: 10px;
+    text-align: right;
+    padding: 25px 10px 2px 2px;
 }
-.container1{
-    max-width: 700px;
-    margin-top: 0 auto;
-}
-.contact-form h1{
-    font-family: 'poppins';
-    font-weight: 400;
-    font-size: 2.5rem;
-}
-.contact-form h2{
-    line-height: 40px;
-    margin-bottom: 5px;
-    font-size: 30px;
-    text-align: center; 
-    font-weight: 500;
-}
-.contact-form .main1{
-    position:relative;
+
+/* Buttons like 1, 2 , = ,+ etc. */
+
+.buttons {
+    font-family: sans-serif;
+    height: auto;
+    /* min-height: 48px; */
+    height: 55px;
+    width: 25%;
+    border: 1px solid black;
+    border-top: 0;
+    color: white;
+    font-size: 1.2rem;
     display: flex;
-    margin: 30px 0;
-}
-.content1{
-    flex-basis: 50%;
-    padding: 3em 3em;
-    background: #fff;
-    box-shadow: 2px 9px 42px -17px rgba(0, 0,0,1);
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-}
-.form-img{
-    flex-basis: 50%;
-    background: #f0f4f8;
-    background-size: cover;
-    padding: 40px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
     align-items: center;
-    display: grid;
-}
-.form-img img{
-   max-width: 100%;
-    border-radius: 50rem;
-}
-.btn,
-button,
-input{
-    border-radius: 35px;
-
-}
-.btn:hover,
-button:hover{
-    color: #272346;
-    transition: 0.5s ease;
-}
-.contact-form form{
-    margin: 30px 0;
-}
-.contact-form input,
-textarea{
-
-    outline: none;
-    margin-bottom: 15px;
-    font-stretch: 16px;
-    color: #999;
-    padding: 14px 20px;
-    width: 100%;
-    display: inline-block;
-    box-sizing: border-box;
-    border: none;
-    background: #fcfcfc;
-    transition: 0.3s ease;
-}
-.contact-form input:focus{
-    background: transparent;
-    border: 1px solid mediumblue;
-}
-.contact-form button{
-    font-size: 18px;
-    color: #fff;
-    width: 100%;
-    background: midnightblue;
-    font-weight: 600;
-    transition: 2s ease;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s;
 }
 
-footer {
-    background-color: teal; /* Background color for the footer */
-    color: #fff; /* Text color */
-    text-align: center;
-    padding: 10px 0;
-    font-size: 14px;
+.buttons:hover {
+    background-color: navy;
+    box-shadow: 0 0 8px navy;
 }
 
-/* Style the copyright text */
-.copyright {
-    font-weight: bold;
+/* Button with Value 0 has a bigger width */
+
+.buttons[data-value = "0"] {
+    width: 50%;
+    border-bottom-left-radius: 10px;
 }
 
-/* Add hover effect to the copyright text if desired */
-.copyright:hover {
-    text-decoration: underline;
-}
-.social-icons {
-    font-size: 24px;
-    color: #fff;
+/* Arithmatic Operators have a separate background color  */
+
+.buttons[data-value = "="] {
+    background-color:green;
+    border-bottom-right-radius: 10px;
 }
 
-.social-icons a {
-    margin: 0 10px; /* Adjust the spacing between icons */
-    text-decoration: none;
-    color: #fff;
+.buttons:nth-child(4n+1) {
+    background-color:green;
 }
 
-.social-icons a:hover {
-    color: midnightblue; /* Change color on hover (LinkedIn) */
+.buttons:nth-child(4n+1):hover, .buttons[data-value = "="]:hover {
+    background-color: navy;
 }
